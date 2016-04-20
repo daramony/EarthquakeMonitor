@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *datetimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapview;
+@property (weak, nonatomic) IBOutlet UILabel *depthLabel;
 
 @end
 
@@ -39,6 +40,7 @@
     [dateFormatter setDateFormat:FORMAT_DATE];
     self.datetimeLabel.text = [dateFormatter stringFromDate:date];
     self.locationLabel.text = self.eqSummaryEntity.place;
+    self.depthLabel.text = [self.eqSummaryEntity.depth stringValue];
     [self displayMap];
 }
 

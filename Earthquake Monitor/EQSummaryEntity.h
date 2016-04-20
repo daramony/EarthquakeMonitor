@@ -18,6 +18,6 @@
 @property (strong, nonatomic) NSNumber *updated;
 @property (assign, nonatomic) double lat;
 @property (assign, nonatomic) double lon;
-@property (strong, nonatomic) NSString *depth;
+@property (strong, nonatomic) NSNumber *depth;
 
 @end
